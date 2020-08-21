@@ -1,0 +1,50 @@
+
+.pergunta {
+  background-color: #7AC5CD;
+  color: #8B5A2B;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  height: 50%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 1.0s;
+  font-weight: bold;
+  font-size: large;
+  
+ 
+}
+
+.pergunta:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .pergunta:hover {
+  background-color:#8EE5EE;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.painel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.faq-questoes {
+    margin-left: 650px;
+}
